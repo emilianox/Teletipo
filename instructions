@@ -1,0 +1,46 @@
+*one time for all bots
+  configure toffee
+  configure gaps
+
+*first time when create the bot
+create frontend/commands.coffee
+create test/test.coffee
+
+create in https://script.google.com your project
+  project name =
+  project id =
+create bot in https://web.telegram.org/#/im?p=@BotFather
+  secret=
+paste secret in _config.coffee and connect.sh
+
+create configs/_config.coffee
+create configs/_users.coffee
+add vars pull.sh
+add vars push.sh
+
+run pull.sh
+run push.sh
+
+https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web_app
+go to  Publish > Deploy as web app.
+ Execute the app as *your username*
+ Who has access to the app "Anyone, even anonymous"
+ Click Deploy.
+get the url (the url should look like this https://script.google.com/macros/s/*****/exec)
+paste in connect.sh
+run connect.sh
+
+*TO EDIT
+run pull.sh
+edit the code
+make the tests
+test in https://script.google.com/*****
+go to  Publish > Deploy as web app.
+  Under Project version, select new version.(you can use dev --more info
+    in https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web_app)
+  Click update.
+get the new url
+paste in connect.sh
+run connect.sh
+
+

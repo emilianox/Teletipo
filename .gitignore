@@ -3,3 +3,5 @@
 /teletipo-base/*
 /pull.sh
 /push.sh
+/src/configs/_config.coffee
+/src/configs/zRealConfig.coffee
