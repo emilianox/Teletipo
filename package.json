@@ -1,0 +1,29 @@
+{
+  "name": "teletipo",
+  "version": "0.0.4",
+  "description": "A telegram bot maker with GAS backend",
+  "main": "index.coffee",
+  "scripts": {
+    "pull":"coffee pull.coffee",
+    "push":"coffee push.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilianox/Teletipo.git"
+  },
+  "keywords": [
+    "bot",
+    "telegram",
+    "google",
+    "app",
+    "script",
+    "gas",
+    "coffee"
+  ],
+  "author": "Emiliano Fernandez <emilianohfernandez@gmail.com>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/emilianox/Teletipo/issues"
+  },
+  "homepage": "https://github.com/emilianox/Teletipo#readme"
+}
