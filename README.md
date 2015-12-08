@@ -7,3 +7,4 @@ A microframework between google app script(GAS) and telegram API  for simple tel
 
 #Warning
 ##Work in progress
+![See instructions](../master/instructions)
