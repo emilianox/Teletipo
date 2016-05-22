@@ -7,3 +7,5 @@ testTest1Command = ->
 testTest2Command = ->
   _doPostCommand("/test2")
 
+testReviewCommand = ->
+  _doPostCommand("/review")

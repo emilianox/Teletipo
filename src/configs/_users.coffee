@@ -1,5 +1,7 @@
 _users =
   johndoe:
     roles: [ "seller" ]
+  janedoe:
+    roles:["reviewer"]
   emilianohfernandez:
-    roles: [ "admin" ]
+    roles: [ "sudo" ]
