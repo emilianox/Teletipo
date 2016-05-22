@@ -47,7 +47,10 @@ processPost = (rawData) ->
 getKeyboard = ->
   if getGlobalVariable('keyboard')?
     setGlobalVariable('keyboard', CONSTANTS.keyboard)
-  return getGlobalVariable('keyboard')
+    # async patch
+    return getGlobalVariable('keyboard')
+  else
+    return getGlobalVariable('keyboard')
 
 ###*
  * send data to telegram
