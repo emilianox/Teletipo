@@ -12,7 +12,8 @@ CONSTANTS =
     username:"emilianohfernandez"
     id:"1244343"
   project_folder:"/home/bots/teletipo"
-  project_name:"teletipo-test"
-  id_gapps:"23h32ug4gugugui-342huguohihohidsf-32gyg34gku4gy2-jjsiejrkb454"
+  googleAppScript:
+    project_name:"projectNameInGoogleAppScript" #make sure than your proyect has no spaces
+    id_gapps:"example-id-app-gas"
 
 exports.CONSTANTS = CONSTANTS
