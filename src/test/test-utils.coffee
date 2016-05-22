@@ -1,4 +1,6 @@
-_doPostCommand = (command)->
+_doPostCommand = (command,user)->
+  if !user?
+    user = CONSTANTS.testUser
   e ={postData:{}}
   tosend =
     update_id: 685769691
@@ -8,12 +10,12 @@ _doPostCommand = (command)->
         id: CONSTANTS.testUser.id
         first_name: "test"
         last_name: "ing"
-        username: CONSTANTS.testUser.username
+        username: user.username
       chat:
-        id: CONSTANTS.testUser.id
+        id: user.id
         first_name: "testing"
         last_name: "in gas"
-        username: CONSTANTS.testUser.username
+        username: user.username
         type: "private"
       date: 1448655088
       text: command
@@ -27,4 +29,7 @@ _sendCommand = (command)->
       chat:
         id:CONSTANTS.testUser.id,
         username:CONSTANTS.testUser.username
-  telegramPost CONSTANTS.testUser.id,execCommand(command,user: CONSTANTS.testUser.username,allData:allData)
+  otheroptions =
+    user: CONSTANTS.testUser.username
+    allData:allData
+  telegramPost(CONSTANTS.testUser.id,execCommand(command,otheroptions))
