@@ -26,11 +26,10 @@ A microframework between google app script(GAS) and telegram API  for simple tel
     id_gapps : ""
   secret:""
 ```
-~~*project_name* : the name of the the project in de *gas* editor
+*project_name* : the name of the the project in de *gas* editor
 *id_gapps*: from "https://script.google.com/d/**ID_GAPPS IS HERE**/edit?splash=yes"
 *secret*: in [BotFather](ttps://web.telegram.org/#/im?p=@BotFather) the token to access :
 > Ex. **22465655206:ZYGPndgYE5Ejs8e6_9pujKywTgHKDvGu-Cp**
-  ~~
 
 - run (into proyect folder) ```toffee push.coffee```
 - edit frontend/commands.coffee
@@ -57,5 +56,3 @@ A microframework between google app script(GAS) and telegram API  for simple tel
 > - Will show a url (the url should look like this https://script.google.com/macros/s/*****/exec)
 - in gas editor run ```setTelegram``` function in init file
 - profit!
-
-**
