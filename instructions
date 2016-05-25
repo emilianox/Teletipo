@@ -1,14 +1,19 @@
+glosary
+ gas = google app script
+
 *one time for all bots
   configure toffee
   configure gaps
 
 *first time when create the bot
 create in https://script.google.com your project
-  project_name =
-  id_gapps =
-  id_gapps : "https://script.google.com/d/**ID_GAPPS**/edit?splash=yes"
+  googleAppScript:
+    project_name : ""
+    id_gapps : ""
+  Project_name : the name of the the project in de *gas* editor
+  Id_gapps: from "https://script.google.com/d/**ID_GAPPS IS HERE**/edit?splash=yes"
 create bot in https://web.telegram.org/#/im?p=@BotFather
-  secret=
+  secret:""
 paste project_name, id_gapps, secret in _config.coffee
 
 run (in proyect folder)
@@ -16,7 +21,7 @@ run (in proyect folder)
   coffee push.coffee
 
 create frontend/commands.coffee
-create test/test.coffee
+create test/frontend.coffee
 
 https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web_app
   go to  Publish > Deploy as web app.
@@ -24,9 +29,7 @@ https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web
    Who has access to the app "Anyone, even anonymous"
    Click Deploy.
   get the url (the url should look like this https://script.google.com/macros/s/*****/exec)
-#todo: connect.sh dont exist
-  paste in connect.sh
-  run connect.sh
+in google app script editor run setTelegram function in init file
 
 *TO EDIT
 run pull.sh
@@ -37,8 +40,6 @@ go to  Publish > Deploy as web app.
   Under Project version, select new version.(you can use dev --more info
     in https://developers.google.com/apps-script/guides/web#deploying_a_script_as_a_web_app)
   Click update.
-get the new url
-paste in connect.sh
-in google app script editor run setsetTelegram function in init file
+in google app script editor run setTelegram function in init file
 
 
