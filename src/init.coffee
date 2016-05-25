@@ -87,3 +87,15 @@ telegramPost = (chat_id, text,otheroptions=null) ->
 
   #log
   logEvent(objToSend)
+
+setTelegram = ->
+  secretTelegram = CONSTANTS.secret
+  driveUrl = ScriptApp.getService().getUrl()
+  URL = 'https://api.telegram.org/bot' + secretTelegram + '/setWebhook?url=' + driveUrl
+  response = UrlFetchApp.fetch(URL)
+  #Logger.log(response.getContentText());
+  result = JSON.parse(response.getContentText())
+  if result.ok and result.result
+    Logger.log 'Telegram URL Updated'
+  response.getContentText()
+  return

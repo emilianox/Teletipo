@@ -39,6 +39,6 @@ go to  Publish > Deploy as web app.
   Click update.
 get the new url
 paste in connect.sh
-run connect.sh
+in google app script editor run setsetTelegram function in init file
 
 
