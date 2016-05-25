@@ -1,9 +1,11 @@
 # Teletipo
+<p align="center">
+  <a href="https://github.com/emilianox/Teletipo">
+    <img height="300" width="300" src="https://cdn.rawgit.com/emilianox/Teletipo/master/images/teletipo.min.svg?raw=true">
+  </a>
+  <p align="center">A microframework between google app script(GAS) and telegram API for simple telegram Bots</p>
+</p>
 
-![Image](https://cdn.rawgit.com/emilianox/Teletipo/master/images/teletipo.min.svg?raw=true)
-
-
-A microframework between google app script(GAS) and telegram API  for simple telegram Bots
 
 **Glosary**
  gas = google app script
