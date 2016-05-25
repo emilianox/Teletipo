@@ -11,9 +11,11 @@ CONSTANTS =
   testUser:
     username:"emilianohfernandez"
     id:"1244343"
-  project_folder:"/home/bots/teletipo"
   googleAppScript:
     project_name:"projectNameInGoogleAppScript" #make sure than your proyect has no spaces
     id_gapps:"example-id-app-gas"
 
-exports.CONSTANTS = CONSTANTS
+
+
+if exports?
+  exports.CONSTANTS = CONSTANTS

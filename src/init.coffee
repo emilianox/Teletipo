@@ -68,7 +68,7 @@ telegramPost = (chat_id, text,otheroptions=null) ->
     text: text
     chat_id: chat_id
     reply_markup:
-      keyboard: keyboard
+      reply_keyboard: keyboard
       resize_keyboard: false
 
   #add otheroptions

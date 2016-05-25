@@ -4,6 +4,9 @@ test1 = (params) ->
 test2 = (params) ->
   return "testing2"
 
+justReviewFn = (params) ->
+  return "review"
+
 startCommand = (params) ->
   "*************************************\n
   Ideas, questions and suggestions, please contact me
