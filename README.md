@@ -15,8 +15,8 @@ A microframework between google app script(GAS) and telegram API  for simple tel
 
 **First time when create each bot**
 
--  clone this repo
--  create in https://script.google.com your project
+- clone this repo
+- create in https://script.google.com your project
 - create bot in https://web.telegram.org/#/im?p=@BotFather
 - paste ***project_name***,***id_gapps***, ***secret*** in _config.coffee
 
@@ -27,7 +27,9 @@ A microframework between google app script(GAS) and telegram API  for simple tel
   secret:""
 ```
 *project_name* : the name of the the project in de *gas* editor
+
 *id_gapps*: from "https://script.google.com/d/**ID_GAPPS IS HERE**/edit?splash=yes"
+
 *secret*: in [BotFather](ttps://web.telegram.org/#/im?p=@BotFather) the token to access :
 > Ex. **22465655206:ZYGPndgYE5Ejs8e6_9pujKywTgHKDvGu-Cp**
 
